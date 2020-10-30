@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Database</title>
+
+    <link rel="stylesheet" href="clear.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Magic The Gathering: Database</h1>
+        <div>
+            <button id="btn-header-post" class="btn-header">Add Card</button>
+            <button id="btn-header-put" class="btn-header">Edit Card</button>
+            <button id="btn-header-delete" class="btn-header">Delete Card</button>
+        </div>
+    </header>
+    <div id="main">
+        <article>
+        </article>
+    </div>
+
+    <div id="modal-card" class="modal-hidden">
+        <div class="modal-popup">
+            <div class="close" id="close-modal-card">+</div>
+
+            <div class="modal-title">
+                <p class="modal-id" id="modal-id"></p>
+                <p class="modal-name" id="modal-name"></p>
+            </div>
+            <div class="modal-body">
+                <img class="image-card" id="image-card" src="" alt="">
+                <blockquote id="modal-quote"></blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-post" class="modal-hidden">
+        <div class=" crud-popup">
+            <div class="close" id="close-modal-post">+</div>
+            <div class="modal-title">
+                <p class="modal-name">Add card</p>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="add-name-card" placeholder="Name">
+                <input type="text" id="add-img-card" placeholder="URL Image">
+                <input type="text" id="add-quote-card" placeholder="Quote">
+                <br>
+                <button id="btn-post" class="btn-header">Add Card</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modal-put" class="modal-hidden">
+        <div class=" crud-popup">
+            <div class="close" id="close-modal-put">+</div>
+            <div class="modal-title">
+                <p class="modal-name">Edit a card</p>
+            </div>
+            <div class="modal-body">
+                <input type="number" id="put-id-card" placeholder="Id">
+                <input type="text" id="put-name-card" placeholder="Name">
+                <input type="text" id="put-img-card" placeholder="URL Image">
+                <input type="text" id="put-quote-card" placeholder="Quote">
+                <br>
+                <button id="btn-put" class="btn-header">Edit Card</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-delete" class="modal-hidden">
+        <div class=" crud-popup">
+            <div class="close" id="close-modal-delete">+</div>
+            <div class="modal-title">
+                <p class="modal-name">Delete a card</p>
+            </div>
+            <div class="modal-body">
+                <input type="number" id="delete-id-card" placeholder="Id">
+                <br>
+                <button id="btn-delete" class="btn-header">Delete Card</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
